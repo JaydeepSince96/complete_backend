@@ -1,0 +1,9 @@
+Whatever we wrote in node.js code's files it is wrapped by modules files.
+
+(
+    function(module, export, require, __filename, __dirname){
+        // Your module codes goes inside here
+    }
+)
+
+// Modifying the pacakage.json file type: "module" will allow you to write modern import export syntax in node app

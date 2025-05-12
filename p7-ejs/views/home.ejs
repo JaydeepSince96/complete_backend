@@ -1,0 +1,8 @@
+<%- include("components/header.ejs")  %>
+<h1>Hello Welcom back to Views</h1>
+
+<ul>
+    <% product.forEach(element => { %>
+        <li> <%= element.title  %> </li>
+    <%}); %>
+</ul>
