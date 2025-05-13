@@ -1,0 +1,47 @@
+[Q-1]] What is I/O in Node.js ?
+
+A))- In Node.js, I/O stands for Input/Output, and it refers to the operations that involve interacting with the outside world — such as reading from or writing to a file, communicating over the network, or receiving input from a user.
+
+✅ What is I/O in General?
+I/O includes:
+
+Reading a file from disk (Input)
+
+Writing a file to disk (Output)
+
+Making an HTTP request (Input + Output)
+
+Listening to a user's request in a web server (Input)
+
+Sending a response back to the browser (Output)
+
+🔄 Node.js and Non-Blocking I/O
+Node.js uses non-blocking, asynchronous I/O.
+
+🧠 This means Node.js does not wait for an I/O operation to complete before moving to the next task.
+
+Instead, it uses callbacks, promises, or async/await to handle the result of that I/O operation later.
+
+📝 Node.js is single-threaded, but it can handle many I/O operations concurrently thanks to its event loop and libuv under the hood.
+
+⚙️ How Node.js Manages I/O
+Node.js uses:
+
+libuv: A C++ library that handles asynchronous I/O.
+
+Event Loop: A loop that keeps checking for I/O events and processes callbacks.
+
+Thread Pool: Some I/O tasks (like file system access or DNS lookups) are done in background threads managed by libuv.
+
+[Q-2]] What is event loop and thread pool in Node.js ?
+
+A))-
+The event loop is the mechanism that allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded.
+
+In short: The event loop handles and dispatches events (like callbacks), allowing Node.js to perform many tasks concurrently.
+
+Node.js uses an event-driven architecture powered by:
+
+The Event Loop
+
+libuv (a C/C++ library that handles async I/O, thread pool, etc.)
