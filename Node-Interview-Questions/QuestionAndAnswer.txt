@@ -45,3 +45,12 @@ Node.js uses an event-driven architecture powered by:
 The Event Loop
 
 libuv (a C/C++ library that handles async I/O, thread pool, etc.)
+
+[Q-3]] what is callbacks and callback hell ?
+
+A))- Callback:- A callback is a function passed as an argument to another function, which is then called (executed) later.
+    --------------
+It's a way to handle asynchronous operations (like reading files, making HTTP requests, waiting for user input).
+
+Callback Hell:- 
+--------------"Callback Hell" happens when you have many nested callbacks, especially in async operations. The code becomes hard to read, hard to maintain, and error-prone.
